@@ -224,7 +224,7 @@
                             var latestCompleteSpot = []
                             var startWithLatestRow = data.reverse()
                             startWithLatestRow.forEach(function(row){
-                                if (!row.lat || !row.long || !row.name || !row.leadsenior || !row.analyst || !row.assessment_date || !row.other || !row.other2 ) return
+                                if (!row.lat || !row.long || !row.name || !row.leadsenior || !row.analyst || !row.assessment_date || !row.other || !row.other2 ||!row.status ) return
                                 else latestCompleteSpot.push(row)
                             })
                             return latestCompleteSpot[0]
