@@ -142,19 +142,20 @@
                         #map {width: 1000px; height: 500px;}
                         </style>
                     </div>
-                    <div id="assignmentsTable"</div>
-                        </div>
+                    <div id="tableFilter"></div>
+                    <div id="assignmentsTable"></div>
                     </div>
+            </div>
 
 
                 </div><!-- end wrapper -->
 
                 <script id="assignmentsTable" type="text/html">
                     <table class="table table-hover">
-                        <tr><th class="tHeader">Name</th><th class="tHeader">Lead Senior Analyst</th><th class="tHeader">Lead Analyst</th><th class="tHeader">Other</th><th class="tHeader">Other 2</th><th class="tHeader">Assessment_Date</th></tr>
+                        <tr><th class="tHeader">Name</th><th class="tHeader">Lead Senior Analyst</th><th class="tHeader">Lead Analyst</th><th class="tHeader">Other</th><th class="tHeader">Other 2</th><th class="tHeader">Assessment_Date</th><th class="tHeader">Status</th></tr>
                         {{#rows}}
                             <tr id="{{rowNumber}}" class="spotRow">
-                            <td>{{name}}</td><td>{{leadsenior}}</td><td>{{analyst}}</td><td>{{other}}</td><td>{{other2}}</td><td>{{date}}</td>
+                            <td>{{name}}</td><td>{{leadsenior}}</td><td>{{analyst}}</td><td>{{other}}</td><td>{{other2}}</td><td>{{date}}</td><td>{{status}}</td>
                             </tr>
                         {{/rows}}
                     </table>
